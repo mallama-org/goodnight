@@ -54,7 +54,6 @@ jobs:
       - name: Modify values file
         run: |
           echo "Updating with commit:  ${{needs.ci.outputs.commit_id}}"
-          pip install yq
           yq -Yi '.image.tag = "${{needs.ci.outputs.commit_id}}"' charts/goodnight/values-prod.yaml
 
       - name: Commit changes
