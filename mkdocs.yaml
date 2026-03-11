@@ -1,0 +1,11 @@
+site_name: 'goodnight'
+site_description: 'Main documentation for the goodnight'
+repo_url: https://github.com/mallama-org/goodnight
+edit_uri: edit/main/docs
+
+plugins:
+  - techdocs-core
+
+nav:
+  - Overview:
+      - Getting started: 'docs/index.md'
