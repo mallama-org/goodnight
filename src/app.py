@@ -5,6 +5,7 @@ import socket
 
 from flask import Flask, jsonify, request
 
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s %(levelname)s %(name)s %(message)s",
@@ -41,5 +42,6 @@ def health():
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0")
+
 
 
