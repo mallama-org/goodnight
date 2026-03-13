@@ -54,7 +54,7 @@ jobs:
       - name: Modify values file
         run: |
           echo "Updating with commit:  ${{needs.ci.outputs.commit_id}}"
-          yq -y -i '.image.tag = "${{needs.ci.outputs.commit_id}}"' charts/goodnight/values-prod.yaml
+          yq -i '.image.tag = "${{needs.ci.outputs.commit_id}}"' charts/goodnight/values-prod.yaml
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
